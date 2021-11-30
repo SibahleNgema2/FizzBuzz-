@@ -10,17 +10,21 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
+           Console.WriteLine("Enter num1");
+           Int f = int.Parse(Console.ReadLine());
+           Console.WriteLine("Enter num2");
+           Int s = int.Parse(Console.ReadLine());
             for (int i = 1; i <= 100; i++)
             {
-                if (i % 3 == 0 && i % 5 == 0)
+                if (f % 3 == 0 && f % 5 == 0)
                 {
                     Console.WriteLine("FizzBuzz");
                 }
-                else if (i % 3 == 0)
+                else if (f % 3 == 0)
                 {
                     Console.WriteLine("Fizz");
                 }
-                else if (i % 5 == 0)
+                else if (f % 5 == 0)
                 {
                     Console.WriteLine("Buzz");
                 }
